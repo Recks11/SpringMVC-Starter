@@ -1,5 +1,5 @@
 ## SpringMVC Starter
-<p> A Spring starter project with XML based configuration to get you upp and running for a small to medium scale spring application with a database and spring security</p>
+<p> A Spring starter project with XML based configuration to get you upp and running for a small to medium scale spring application with a database and spring security for those who do not want to use Spring-Boot</p>
 
 
 ## Dependencies included (Some in comments) 
