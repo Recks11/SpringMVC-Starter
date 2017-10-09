@@ -40,6 +40,8 @@
         <filter-class>com.github.ziplet.filter.compression.CompressingFilter</filter-class>
     </filter>
 
+    <!-- FILTER MAPPINGS -->
+
     <!--COMPRESSION FILTER MAPPING-->
     <filter-mapping>
         <filter-name>CompressingFilter</filter-name>

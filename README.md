@@ -1,10 +1,15 @@
-<h3 align="center">SpringMVC Starter</h3>
-<p> A Spring starter project with XML based configuration to get you upp and running for a small to medium scale spring application</p>
+## SpringMVC Starter
+<p> A Spring starter project with XML based configuration to get you upp and running for a small to medium scale spring application with a database and spring security</p>
+
 
 ## Dependencies included (Some in comments) 
+- Spring Framework (4.3.10.RELEASE)
 - Hibernate
 - Spring security
-- Jackson
+- taglibs
+- log4j
+- slf4j
+- fasterxml jackson
 - Mail sender
 - GZip for web compression
 <p> Dependencies can be changed as you like update to current version if you like</p>
@@ -32,6 +37,9 @@
 - Enter the database password in `jdbc.username`
 - Thats all! You can now use hibernate for the selected database
 <p>I prefer using a hibernate.properties file instead of directly editing the appliocationContext file because the database can be changed at any point in time by just changing or editing only that file</p>
+
+## HOW TO SETUP SPRING SECURITY
+<p>Coming soon...</P>
 
 ## Project Structure
 <p>This is the overall project structure. the full project naming scheme can be refactored to suit your needs</p>

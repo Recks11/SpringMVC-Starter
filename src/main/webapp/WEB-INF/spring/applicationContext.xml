@@ -7,7 +7,8 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/security
                            http://www.springframework.org/schema/security/spring-security.xsd">
-<!-- Database connection-->
+
+<!-- DATABASE CONNECTION CONFIG-->
     <!--<bean id="propertyConfiguration"-->
           <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"-->
           <!--p:location="classpath:hibernate.properties"/>-->
@@ -40,8 +41,13 @@
             <!--</list>-->
         <!--</property>-->
     <!--</bean>-->
-<!-- END Database connection-->
-    <!-- Mail sender configuration -->
+    <!---->
+    <!--<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">-->
+    <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+    <!--</bean>-->
+    <!-- END DATABASE CONNECTION CONFIG-->
+
+    <!-- MAIL SENDER CONFIGURATION -->
     <!--<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">-->
         <!--&lt;!&ndash; SMTP settings &ndash;&gt;-->
         <!--<property name="host" value="${smtp.host}" />-->
@@ -59,10 +65,7 @@
         <!--</property>-->
     <!--</bean>-->
     <!--<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />-->
-
-    <!--<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">-->
-        <!--<property name="sessionFactory" ref="sessionFactory"/>-->
-    <!--</bean>-->
+    <!-- END  MAIL SENDER CONFIGURATION -->
 
     <!-- Spring Security config -->
     <!--<security:http auto-config="true">-->
@@ -87,6 +90,6 @@
                                         <!--users-by-username-query="SELECT username, password, enabled FROM users WHERE username = ? " />-->
         <!--</security:authentication-provider>-->
     <!--</security:authentication-manager>-->
-    <!-- End Config -->
+    <!-- End Spring Security config -->
 
 </beans>
