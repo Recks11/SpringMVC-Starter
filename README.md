@@ -16,10 +16,10 @@
 
 ## How to setup on Intellij Idea
 - Clone the repo: `git clone https://github.com/Recks11/SpringMVC-Starter.git` or download it
-- Import Intellij Idea and enable auto import when asked. if you are not asked go to `Preferences > Build, execution, deployment > Build Tools > Maven > Importing ` and tick `Import maven projects automatically`
+- Import on Intellij Idea from external sources as a maven project and enable auto import when asked. if you are not asked go to `Preferences > Build, execution, deployment > Build Tools > Maven > Importing ` and tick `Import maven projects automatically`
 - In the `POM.xml` file change the spring version to the version you want to use this repo uses the 4.3.10.RELEASE
 - In Intellij IDEA go to `File > Project Structure > Facets` and change the `web resource directory` to the location of the `web.xml` file which is
-`src/main/webapp`
+`src/main/webapp`  and the `web module deployment descriptor` to the `web.xml` file itself
 - In `File > Project Structure > artifacts` select all available artifacts and add to lib or just double click them one at a time
 - Create a new run configuration from `run > Edit configurations` click the `+` and select `Tomcat > local` if you have tomcat installed select tomcat home (where its installed or extracted to) in the before lunch section you'll see an error click fix to select the artifact to use for deployment
 - Press apply then press OK and now run the application. you should immediately land in the 'IT WORKS page'.
