@@ -23,8 +23,17 @@
 ## How to setup on eclipse
 <p>Coming soon...</P>
 
+## How to setup Hibernate
+- Uncomment the hibernate dependencies in the `Pom.xml` file
+- Uncomment the Database configuration section in the `applicationContext.xml` file
+- Go to the `hibernate.properties` file
+- Enter the database url in `jdbc.url` an example is `jdbc:mysql://localhost:3306/DatabaseName?useSSL=false`
+- Enter the database username in `jdbc.username`
+- Enter the database password in `jdbc.username`
+- Thats all! You can now use hibernate for the selected database
+<p>I prefer using a hibernate.properties file instead of directly editing the appliocationContext file because the database can be changed at any point in time by just changing or editing only that file</p>
 ## Project Structure
-<p>This is the overall project structure</p>
+<p>This is the overall project structure. the full project naming scheme can be refactored to suit your needs</p>
 
 ```
 SpringMVC Starter/
