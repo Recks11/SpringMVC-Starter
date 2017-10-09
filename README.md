@@ -32,6 +32,7 @@
 - Enter the database password in `jdbc.username`
 - Thats all! You can now use hibernate for the selected database
 <p>I prefer using a hibernate.properties file instead of directly editing the appliocationContext file because the database can be changed at any point in time by just changing or editing only that file</p>
+
 ## Project Structure
 <p>This is the overall project structure. the full project naming scheme can be refactored to suit your needs</p>
 
